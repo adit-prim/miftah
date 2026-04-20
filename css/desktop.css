@@ -1,0 +1,43 @@
+/* ========================================
+   IMAGINARIUM - DESKTOP STYLES (min-width: 1024px)
+   ======================================== */
+
+/* Enhance large screen spacing */
+.magazine-interior {
+    padding: 3rem 4rem;
+}
+
+/* Larger titles on desktop */
+.masthead h1 {
+    font-size: 5.5rem;
+}
+.article-title {
+    font-size: 2.2rem;
+}
+.hero-section .article-title {
+    font-size: 3.5rem;
+}
+
+/* Ensure feature image retains height on desktop */
+.feature-img {
+    height: 380px;
+}
+
+/* Two-column gap */
+.two-col {
+    gap: 2.5rem;
+}
+
+/* Team grid with more columns if space */
+.tim-grid {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* Navigation always visible on desktop */
+.nav-toggle-label {
+    display: none !important;
+}
+.nav-menu {
+    display: flex !important;
+    flex-direction: row;
+}

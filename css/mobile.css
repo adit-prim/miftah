@@ -1,0 +1,92 @@
+/* ========================================
+   IMAGINARIUM - MOBILE STYLES (max-width: 768px)
+   ======================================== */
+
+/* Adjust base padding */
+body {
+    padding: 0.5rem;
+}
+.magazine-interior {
+    padding: 1.5rem 1.2rem;
+}
+
+/* Masthead scaling */
+.masthead h1 {
+    font-size: 2.8rem;
+}
+
+/* Show hamburger, hide nav menu initially */
+.nav-toggle-label {
+    display: flex;
+}
+.nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: var(--warna-kartu);
+    border-radius: 16px;
+    padding: 1rem;
+    margin-top: 1rem;
+    border: 1px solid var(--border-terang);
+}
+.nav-toggle:checked ~ .nav-menu {
+    display: flex;
+}
+.nav-menu a {
+    padding: 0.8rem 1rem;
+    justify-content: center;
+}
+
+/* Two column becomes one */
+.two-col {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+/* Article title size */
+.article-title {
+    font-size: 1.6rem;
+}
+.hero-section .article-title {
+    font-size: 2.2rem;
+}
+
+/* Adjust images */
+.feature-img {
+    height: auto;
+    max-height: 300px;
+}
+.img-wrapper img {
+    height: auto;
+    max-height: 260px;
+}
+
+/* Team grid adjustments */
+.tim-grid {
+    grid-template-columns: 1fr;
+}
+
+/* Footer stacking */
+.footer-note {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Reduce padding on blocks */
+.article-block {
+    padding: 1.5rem 1.2rem;
+}
+.hero-section {
+    padding: 2rem 1.5rem;
+}
+
+/* Hamburger animation */
+.nav-toggle:checked + .nav-toggle-label span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+.nav-toggle:checked + .nav-toggle-label span:nth-child(2) {
+    opacity: 0;
+}
+.nav-toggle:checked + .nav-toggle-label span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
