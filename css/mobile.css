@@ -10,10 +10,39 @@ body {
     padding: 1.5rem 1.2rem;
 }
 
-/* Masthead scaling */
-.masthead h1 {
-    font-size: 2.8rem;
+/* ---------- PERBAIKAN HEADING TERPOTONG ---------- */
+/* Pastikan container tidak memotong konten */
+.magazine-wrapper {
+    overflow-x: hidden;      /* Tetap jaga border-radius tanpa potong vertikal */
+    overflow-y: visible;
 }
+.magazine-header {
+    overflow: visible;       /* Hindari pemotongan */
+    padding-bottom: 1.2rem;
+}
+.masthead {
+    padding-right: 50px;     /* Ruang untuk tombol hamburger */
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+/* Ukuran font heading utama di mobile */
+.masthead h1 {
+    font-size: 2.2rem;       /* Kurangi dari 2.8rem agar muat */
+    line-height: 1.1;
+    word-break: break-word;
+    white-space: normal;
+    letter-spacing: -0.03em;
+}
+
+/* Untuk layar sangat kecil (≤480px) */
+@media (max-width: 480px) {
+    .masthead h1 {
+        font-size: 1.8rem;
+        padding-right: 40px;
+    }
+}
+/* ---------- AKHIR PERBAIKAN ---------- */
 
 /* Show hamburger, hide nav menu initially */
 .nav-toggle-label {
